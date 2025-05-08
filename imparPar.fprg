@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="imparPar"/>
+        <attribute name="authors" value="bruno.sabbato"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-05-08 03:13:08 "/>
+        <attribute name="created" value="YnJ1bm8uc2FiYmF0bztTQU4wNzE3NDU5VzExLTE7MjAyNS0wNS0wODsiMDE6NTQ6NDcgIjszNDAw"/>
+        <attribute name="edited" value="YnJ1bm8uc2FiYmF0bztTQU4wNzE3NDU5VzExLTE7MjAyNS0wNS0wODsiMDM6MTM6MDggIjsxOzM1MDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="primeiroNum, segundoNum, contador" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro n&#250;mero&quot;" newline="True"/>
+            <input variable="primeiroNum"/>
+            <output expression="&quot;Digite o segundo n&#250;mero, maior do que o primeiro&quot;" newline="True"/>
+            <input variable="segundoNum"/>
+            <for variable="contador" start="primeiroNum + 1" end="segundoNum - 1" direction="inc" step="1">
+                <if expression="contador%2 == 0">
+                    <then>
+                        <output expression="contador &amp; &quot; - PAR&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="contador &amp; &quot; - IMPAR&quot;" newline="True"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;Programa finalizado&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
